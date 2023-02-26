@@ -1,0 +1,272 @@
+@import "https://fonts.googleapis.com/css2?family=Cantora+One&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Pridi:wght@200&display=swap";
+:root {
+  --primary-color: #85a8b0;
+  --effect-color: #c6f576;
+  --text-color: #e64c27;
+  --secondary-color: #93c596;
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.carrousel {
+  width: 60%;
+  max-width: 120em;
+  padding: 2em;
+  overflow: hidden;
+}
+
+.carrousel .grande {
+  width: 200%;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  transition: all .5s;
+  display: flex;
+  transform: translateX(0%);
+}
+
+.carrousel .video {
+  width: calc(50% - 4em);
+  min-height: 10vh;
+  color: #393939;
+  background-color: var(--secondary-color);
+  box-shadow: .6em .6em 1.2em var(--effect-color), -.6em -.6em 1.2em var(--effect-color), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: 1em;
+  transition: all .4s;
+}
+
+.carrousel .puntos {
+  width: 100%;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0 0;
+  padding: .4em;
+  display: flex;
+}
+
+.carrousel .punto {
+  width: 2em;
+  height: 2em;
+  color: #393939;
+  background-color: var(--secondary-color);
+  box-shadow: .6em .6em 1.2em var(--effect-color), -.6em -.6em 1.2em var(--effect-color), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  cursor: pointer;
+  border-radius: 1em;
+  margin: 1em 1em 0;
+  transition: all .4s;
+}
+
+.carrousel .punto.activo {
+  background-color: #e64c27;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #85a8b0;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  z-index: 1;
+  background-color: #93c596;
+  border-bottom: 5px solid #e64c27;
+  justify-content: space-between;
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  margin-top: 200px;
+}
+
+.juego {
+  position: relative;
+}
+
+.juego-desplegable {
+  text-align: center;
+  width: 100%;
+  background-color: #93c596;
+  border: 5px solid #e64c27;
+  border-top: 0;
+  padding-bottom: 3px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.juego:hover .juego-desplegable {
+  display: block;
+}
+
+.links {
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+}
+
+.nav-link {
+  color: #e64c27;
+  cursor: pointer;
+  border: 2px solid #93c596;
+  padding: 10px;
+  font-family: Cantora One, sans-serif;
+  font-size: 2rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.personajes {
+  position: relative;
+}
+
+.personajes-desplegable {
+  text-align: center;
+  width: 100%;
+  background-color: #93c596;
+  border: 5px solid #e64c27;
+  border-top: 0;
+  padding-bottom: 3px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.personajes:hover .personajes-desplegable {
+  display: block;
+}
+
+.niveles {
+  position: relative;
+}
+
+.niveles-desplegable {
+  text-align: center;
+  width: 110%;
+  background-color: #93c596;
+  border: 5px solid #e64c27;
+  border-top: 0;
+  padding-bottom: 3px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.niveles:hover .niveles-desplegable {
+  display: block;
+}
+
+.bso {
+  position: relative;
+}
+
+.bso-desplegable {
+  text-align: center;
+  width: 100%;
+  background-color: #93c596;
+  border: 5px solid #e64c27;
+  border-top: 0;
+  padding-bottom: 3px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.bso:hover .bso-desplegable {
+  display: block;
+}
+
+.sub-link-container {
+  z-index: 1;
+  border: none;
+  padding: 5px;
+  transition: all .4s ease-in;
+  position: relative;
+}
+
+.sub-link {
+  color: #e64c27;
+  width: 100%;
+  font-family: Cantora One, sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.sub-link-container:before, .sub-link-container:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+}
+
+.sub-link-container:hover {
+  background: #c6f576;
+  box-shadow: 0 0 5px #c6f576, 0 0 25px #c6f576, 0 0 50px #c6f576, 0 0 200px #c6f576;
+}
+
+.background-logo {
+  min-height: 160px;
+  background-color: #93c596;
+  border-bottom: 5px solid #e64c27;
+  border-left: 5px solid #e64c27;
+  border-right: 5px solid #e64c27;
+}
+
+.logo {
+  height: 154px;
+  width: 384px;
+}
+
+.main {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.title {
+  color: #e64c27;
+  text-shadow: 1px 1px #000;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-family: Cantora One, sans-serif;
+  font-size: 2.8rem;
+}
+
+.subtitle {
+  color: #e64c27;
+  text-shadow: 1px 1px #000;
+  text-align: center;
+  font-family: Cantora One, sans-serif;
+  font-size: 2.8rem;
+}
+
+.game {
+  height: 1200px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.ad85b7e3.css.map */

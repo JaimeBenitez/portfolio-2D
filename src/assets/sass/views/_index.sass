@@ -1,0 +1,174 @@
+
+body    
+    box-sizing: border-box
+    background-color: $primary-color
+    
+nav
+    position: fixed
+    display: flex
+    top: 0
+    height: 80px    
+    width: 100%
+    justify-content: space-between
+    background-color: $secondary-color
+    border-bottom: 5px solid $text-color
+    z-index: 1
+
+li 
+    list-style: none
+
+main
+    margin-top: 200px
+
+.juego
+    position: relative
+
+.juego-desplegable
+    display: none
+    background-color: $secondary-color
+    border: 5px solid $text-color
+    border-top: 0px
+    position: absolute
+    padding-bottom: 3px
+    text-align: center    
+    width: 100%
+    top: 100%
+    left: 0   
+
+.juego:hover .juego-desplegable
+    display: block 
+
+.links
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    width: 100%
+
+.nav-link 
+    color: $text-color    
+    font-family: $title-font
+    font-size: $subtitle-size
+    border: 2px solid $secondary-color
+    cursor: pointer
+    padding: 10px
+
+.nav-link:hover    
+   text-decoration: underline
+
+.personajes
+    position: relative
+
+.personajes-desplegable
+    display: none
+    background-color: $secondary-color
+    border: 5px solid $text-color
+    border-top: 0px
+    position: absolute
+    padding-bottom: 3px
+    text-align: center    
+    width: 100%
+    top: 100%
+    left: 0
+
+.personajes:hover .personajes-desplegable
+    display: block 
+
+.niveles
+    position: relative
+
+.niveles-desplegable
+    display: none
+    background-color: $secondary-color
+    border: 5px solid $text-color
+    border-top: 0px
+    position: absolute
+    padding-bottom: 3px
+    text-align: center    
+    width: 110%
+    top: 100%
+    left: 0   
+
+.niveles:hover .niveles-desplegable
+    display: block 
+
+.bso
+    position: relative
+
+.bso-desplegable
+    display: none
+    background-color: $secondary-color
+    border: 5px solid $text-color
+    border-top: 0px
+    position: absolute
+    padding-bottom: 3px
+    text-align: center    
+    width: 100%
+    top: 100%
+    left: 0   
+
+.bso:hover .bso-desplegable
+    display: block 
+
+.sub-link-container
+    padding: 5px
+    position: relative
+    border: none
+    transition: .4s ease-in
+    z-index: 1
+.sub-link
+    color: $text-color    
+    font-family: $title-font
+    font-size: $subtitle-size
+    width: 100%
+    text-decoration: none
+     
+.sub-link-container::before, .sub-link-container::after
+    position: absolute
+    content: ""
+    z-index: -1
+.sub-link-container:hover
+    background: $effect-color
+    box-shadow: 0 0 5px $effect-color, 0 0 25px $effect-color, 0 0 50px $effect-color, 0 0 200px $effect-color
+
+
+    
+
+   
+.background-logo
+    background-color: $secondary-color
+    min-height: 160px
+    border-bottom: 5px  solid $text-color
+    border-right: 5px  solid $text-color
+    border-left: 5px  solid $text-color
+
+.logo   
+    height: 154px
+    width: 384px
+
+
+.main
+    display: flex
+    align-items:  center
+    justify-content: center
+    flex-direction: column
+    height: 100vh
+.title
+    font-family: $title-font
+    font-size: $title-size
+    color: $text-color
+    text-shadow: 1px 1px black
+    margin-top: 5rem
+    margin-bottom: 3rem
+.subtitle
+    font-family: $title-font
+    font-size: $title-size
+    color: $text-color
+    text-shadow: 1px 1px black
+    text-align: center
+
+.game
+    height: 1200px
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: center
