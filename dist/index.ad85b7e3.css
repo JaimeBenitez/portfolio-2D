@@ -128,6 +128,95 @@
   background-color: #85a8b0;
 }
 
+.acordeon {
+  width: 90%;
+  max-width: 120em;
+  background-color: #0000;
+  padding: 2em;
+}
+
+.acordeon .bloque {
+  margin: 0 0 1em;
+}
+
+.acordeon .acordeon-title {
+  color: #393939;
+  background-color: var(--secondary-color);
+  box-shadow: .7em .7em 1.4em var(--effect-color), -.7em -.7em 1.4em var(--effect-color), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  text-align: center;
+  color: #e64c27;
+  text-shadow: 1px 1px #000;
+  background-color: #85a8b0;
+  border-radius: 1em;
+  margin: 0 0 1em;
+  padding: 1em;
+  font-family: Cantora One, sans-serif;
+  font-size: 2rem;
+  transition: all .4s;
+}
+
+.acordeon .contenido {
+  height: 0;
+  max-width: 90rem;
+  color: #393939;
+  background-color: var(--secondary-color);
+  box-shadow: .7em .7em 1.4em var(--effect-color), -.7em -.7em 1.4em var(--effect-color), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  background-color: #85a8b0;
+  border-radius: 1em;
+  align-items: center;
+  padding: 0;
+  transition: all .4s;
+  display: flex;
+  overflow: hidden;
+}
+
+.contenido__img {
+  padding: 1em;
+}
+
+.contenido__img img {
+  object-fit: cover;
+  border-radius: .8rem;
+  display: block;
+}
+
+.acordeon .bloque.activo .contenido {
+  height: 40em;
+  padding: 2.5rem;
+}
+
+@media (max-width: 1000px) {
+  .acordeon .bloque.activo .contenido {
+    height: 60em;
+    flex-direction: column;
+  }
+}
+
+.contenido__cumpleanios span {
+  color: #e64c27;
+  text-shadow: 1px 1px #000;
+  margin: .5rem 0;
+  font-family: Cantora One, sans-serif;
+  font-weight: 600;
+  display: block;
+}
+
+.contenido__title {
+  text-transform: uppercase;
+  color: #e64c27;
+  text-shadow: 1px 1px #000;
+  margin: 1.5rem 0 2rem;
+  font-family: Cantora One, sans-serif;
+  font-size: 2rem;
+}
+
+.contenido__texto {
+  color: #e64c27;
+  text-shadow: .5px .5px #000;
+  font-family: Pridi, sans-serif;
+  font-weight: bold;
+}
+
 body {
   box-sizing: border-box;
   background-color: #85a8b0;
@@ -159,7 +248,7 @@ main {
 
 .juego-desplegable {
   text-align: center;
-  width: 100%;
+  width: 120%;
   background-color: #93c596;
   border: 5px solid #e64c27;
   border-top: 0;
@@ -168,6 +257,7 @@ main {
   position: absolute;
   top: 100%;
   left: 0;
+  transform: translateX(-10%);
 }
 
 .juego:hover .juego-desplegable {
@@ -188,6 +278,12 @@ main {
   padding: 10px;
   font-family: Cantora One, sans-serif;
   font-size: 2rem;
+}
+
+@media (max-width: 1050px) {
+  .nav-link {
+    font-size: 1.5rem;
+  }
 }
 
 .nav-link:hover {
@@ -242,7 +338,7 @@ main {
 
 .bso-desplegable {
   text-align: center;
-  width: 100%;
+  width: 200%;
   background-color: #93c596;
   border: 5px solid #e64c27;
   border-top: 0;
@@ -251,6 +347,7 @@ main {
   position: absolute;
   top: 100%;
   left: 0;
+  transform: translateX(-25%);
 }
 
 .bso:hover .bso-desplegable {
@@ -273,6 +370,12 @@ main {
   text-decoration: none;
 }
 
+@media (max-width: 1050px) {
+  .sub-link {
+    font-size: 1.5rem;
+  }
+}
+
 .sub-link-container:before, .sub-link-container:after {
   content: "";
   z-index: -1;
@@ -292,9 +395,22 @@ main {
   border-right: 5px solid #e64c27;
 }
 
+@media (max-width: 1050px) {
+  .background-logo {
+    min-height: 80px;
+  }
+}
+
 .logo {
   height: 154px;
   width: 384px;
+}
+
+@media (max-width: 1050px) {
+  .logo {
+    height: 77px;
+    width: 192px;
+  }
 }
 
 .main {

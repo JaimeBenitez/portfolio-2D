@@ -32,9 +32,10 @@ main
     position: absolute
     padding-bottom: 3px
     text-align: center    
-    width: 100%
+    width: 120%
     top: 100%
     left: 0   
+    transform: translateX(-10%)
 
 .juego:hover .juego-desplegable
     display: block 
@@ -52,6 +53,8 @@ main
     border: 2px solid $secondary-color
     cursor: pointer
     padding: 10px
+    @media(max-width: 1050px)
+        font-size: $text-size
 
 .nav-link:hover    
    text-decoration: underline
@@ -103,9 +106,10 @@ main
     position: absolute
     padding-bottom: 3px
     text-align: center    
-    width: 100%
+    width: 200%
     top: 100%
     left: 0   
+    transform: translateX(-25%)
 
 .bso:hover .bso-desplegable
     display: block 
@@ -122,6 +126,8 @@ main
     font-size: $subtitle-size
     width: 100%
     text-decoration: none
+    @media(max-width: 1050px)
+        font-size: $text-size
      
 .sub-link-container::before, .sub-link-container::after
     position: absolute
@@ -137,10 +143,17 @@ main
     border-bottom: 5px  solid $text-color
     border-right: 5px  solid $text-color
     border-left: 5px  solid $text-color
+    @media(max-width: 1050px)
+        min-height: 80px
+
 
 .logo   
     height: 154px
     width: 384px
+    @media(max-width: 1050px)
+        height: 77px
+        width: 192px
+
 
 .main
     display: flex

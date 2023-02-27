@@ -1,5 +1,6 @@
 'use strict'
 
+//Parte carrusel
 const grande = document.querySelector('.grande')
 const punto = document.querySelectorAll('.punto')
 const grandeHistoria = document.querySelector('.grande-historia')
@@ -36,5 +37,22 @@ puntoHistoria.forEach( (cadaPunto, i) => {
             puntoHistoria[i].classList.remove('activo')
         })
         puntoHistoria[i].classList.add('activo')
+    })
+})
+
+//Parte acordeon
+
+const bloque = document.querySelectorAll('.bloque')
+const titulo = document.querySelectorAll('.acordeon-title')
+
+
+titulo.forEach( ( cadaTitulo, i )=>{
+    
+    titulo[i].addEventListener( 'click', () =>{
+
+        bloque.forEach( ( cadaBloque, i )=>{
+            bloque[i].classList.remove('activo')
+    })
+    bloque[i].classList.add('activo')
     })
 })

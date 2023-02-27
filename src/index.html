@@ -14,7 +14,7 @@
         <nav class="navbar">
             
             <ul class="links">
-                <li class="juego nav-link">el juego
+                <li class="juego nav-link">juego
                     <ul class="juego-desplegable">
                         <li class="sub-link-container"><a href="#trailers" class="sub-link">trailers</a></li> 
                         <li class="sub-link-container"><a href="#historia" class="sub-link">historia</a></li>                                                                       
@@ -22,8 +22,8 @@
                 </li>
                 <li class="personajes nav-link">personajes
                     <ul class="personajes-desplegable">
-                        <li class="sub-link-container"><a href="#" class="sub-link">letriang</a></li>
-                        <li class="sub-link-container"><a href="#" class="sub-link">berub</a></li>
+                        <li class="sub-link-container"><a href="#letriang" class="sub-link">letriang</a></li>
+                        <li class="sub-link-container"><a href="#berub" class="sub-link">berub</a></li>
                     </ul>
                 </li>
             </ul>
@@ -39,7 +39,7 @@
                         <li class="sub-link-container"><a href="#" class="sub-link">invierno</a></li>                        
                     </ul>
                 </li>
-                <li class="bso nav-link">banda sonora
+                <li class="bso nav-link">bso
                     <ul class="bso-desplegable">
                         <li class="sub-link-container"><a href="#" class="sub-link">temas</a></li>
                         <li class="sub-link-container"><a href="#" class="sub-link">sonidos</a></li>                                                
@@ -120,16 +120,65 @@
                 
             </div>
             <ul class="puntos">
-                <li class="punto-historia activo">Intro</li>
-                <li class="punto-historia">Cap 1</li>
-                <li class="punto-historia">Cap 2</li>
-                <li class="punto-historia">Cap 3</li>
+                <li class="punto-historia activo">0</li>
+                <li class="punto-historia">1</li>
+                <li class="punto-historia">2</li>
+                <li class="punto-historia">3</li>
             </ul>
         </section>
         <section class="characters">
             <h2 class="section-title">PERSONAJES</h2>
+            <div class="acordeon">
+                <div class="bloque">
+                    <h3 class="acordeon-title" id="letriang">LETRIANG</h3>
+                    <article class="contenido">
+                        <div class="contenido__img">
+                            <img srcset="assets/IMG/Triangulo-pequeño.png 320w,
+                                         assets/IMG/Triangulo-medio.png 480w"                                        
+                                 sizes= "(max-width: 680px) 320px,
+                                          480px"                                         
+                                 src="assets/IMG/Triangulo-medio.png" alt="Letriang">    
+                        </div>
+                        <div class="contenido__info">
+                            <div class="contenido__cumpleanios">
+                                <span>Cumpleaños</span>
+                                <span>12/05</span>
+                            </div>
+                            <h4 class="contenido__title">Descripción</h4>
+                            <p class="contenido__texto">
+                                Letriang es alegre, alocado y valiente. Todo a lo que un triangulo aspira a ser.
+                                Le gustan las aventuras, las cosas simetricas y coloridas y saltar por ahi.
+                                No tolera las injusticias y por tanto hara lo que este en sus ángulos para detener a Berub.
+                            </p>                            
+                        </div>
+                    </article>
+                </div>
+                <div class="bloque">
+                    <h3 class="acordeon-title" id="berub">BERUB</h3>
+                    <article class="contenido">
+                        <div class="contenido__img">
+                            <img srcset="assets/IMG/goma-pequeño.png 320w,
+                                         assets/IMG/goma-medio.png 480w"                                        
+                                 sizes= "(max-width: 680px) 320px,
+                                          480px"                                         
+                                 src="assets/IMG/Triangulo-medio.png" alt="Berub">    
+                        </div>
+                        <div class="contenido__info">
+                            <div class="contenido__cumpleanios">
+                                <span>Cumpleaños</span>
+                                <span>21/09</span>
+                            </div>
+                            <h4 class="contenido__title">Descripción</h4>
+                            <p class="contenido__texto">
+                                Berub es una goma gruñona que odia las cosas simetricas. Piensa que la mejor combinación de colores
+                                es el blanco y negro y es fan de Tim Burton y de Picasso. Cansado de que en Gemeotry haya tanto calor
+                                ha decidido tomar cartas en el asunto y comenzar la operación Borrado Total. ¿He dicho ya que odia lo simetrico?
+                            </p>                            
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
-
     </main>
 </body>
 </html>
