@@ -16,7 +16,7 @@
 .carrousel {
   width: 60%;
   max-width: 120em;
-  padding: 2em;
+  padding: 1em;
   overflow: hidden;
 }
 
@@ -25,7 +25,18 @@
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2em;
+  padding: 1em;
+  transition: all .5s;
+  display: flex;
+  transform: translateX(0%);
+}
+
+.carrousel .grande-historia {
+  width: 400%;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
   transition: all .5s;
   display: flex;
   transform: translateX(0%);
@@ -39,6 +50,34 @@
   box-shadow: .6em .6em 1.2em var(--effect-color), -.6em -.6em 1.2em var(--effect-color), inset 0 0 0 transparent, inset 0 0 0 transparent;
   border-radius: 1em;
   transition: all .4s;
+}
+
+.card {
+  color: #393939;
+  background-color: var(--secondary-color);
+  box-shadow: .6em .6em 1.2em var(--effect-color), -.6em -.6em 1.2em var(--effect-color), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  width: calc(25% - 8em);
+  min-height: 20vh;
+  text-align: center;
+  background: #85a8b0;
+  border-radius: 4px;
+  padding: 1.5rem;
+  transition: all .4s;
+  rotate: 1deg;
+}
+
+.card-title {
+  color: #e64c27;
+  text-shadow: 1px 1px #000;
+  margin-bottom: 1rem;
+  font-family: Cantora One, sans-serif;
+}
+
+.card-text {
+  color: #e64c27;
+  text-shadow: .5px .5px #000;
+  font-family: Pridi, sans-serif;
+  font-weight: bold;
 }
 
 .carrousel .puntos {
@@ -63,8 +102,30 @@
   transition: all .4s;
 }
 
+.carrousel .punto-historia {
+  width: 4em;
+  text-align: center;
+  color: #393939;
+  background-color: var(--secondary-color);
+  box-shadow: .6em .6em 1.2em var(--effect-color), -.6em -.6em 1.2em var(--effect-color), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  color: #e64c27;
+  height: 2em;
+  cursor: pointer;
+  text-shadow: 1px 1px #000;
+  border-radius: 1em;
+  margin: 1em 1em 0;
+  font-family: Pridi, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all .4s;
+}
+
 .carrousel .punto.activo {
   background-color: #e64c27;
+}
+
+.carrousel .punto-historia.activo {
+  background-color: #85a8b0;
 }
 
 body {
@@ -89,7 +150,7 @@ li {
 }
 
 main {
-  margin-top: 200px;
+  margin-top: 20px;
 }
 
 .juego {
@@ -237,7 +298,6 @@ main {
 }
 
 .main {
-  height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -247,8 +307,16 @@ main {
 .title {
   color: #e64c27;
   text-shadow: 1px 1px #000;
-  margin-top: 5rem;
+  margin-top: 160px;
   margin-bottom: 3rem;
+  font-family: Cantora One, sans-serif;
+  font-size: 2.8rem;
+}
+
+.section-title {
+  color: #e64c27;
+  text-shadow: 1px 1px #000;
+  margin-bottom: 1rem;
   font-family: Cantora One, sans-serif;
   font-size: 2.8rem;
 }
@@ -258,14 +326,29 @@ main {
   text-shadow: 1px 1px #000;
   text-align: center;
   font-family: Cantora One, sans-serif;
-  font-size: 2.8rem;
+  font-size: 2rem;
 }
 
 .game {
-  height: 1200px;
+  width: 80%;
+  background-color: #93c596;
+  border: 5px solid #e64c27;
+  border-radius: 0 100px 100px 0;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  display: flex;
+}
+
+.characters {
+  width: 80%;
+  background-color: #93c596;
+  border: 5px solid #e64c27;
+  border-radius: 0 100px 100px 0;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
   display: flex;
 }
 

@@ -18,10 +18,11 @@ li
     list-style: none
 
 main
-    margin-top: 200px
+    margin-top: 20px
 
 .juego
     position: relative
+    
 
 .juego-desplegable
     display: none
@@ -129,10 +130,6 @@ main
 .sub-link-container:hover
     background: $effect-color
     box-shadow: 0 0 5px $effect-color, 0 0 25px $effect-color, 0 0 50px $effect-color, 0 0 200px $effect-color
-
-
-    
-
    
 .background-logo
     background-color: $secondary-color
@@ -145,29 +142,51 @@ main
     height: 154px
     width: 384px
 
-
 .main
     display: flex
     align-items:  center
     justify-content: center
     flex-direction: column
-    height: 100vh
+    
 .title
     font-family: $title-font
     font-size: $title-size
     color: $text-color
     text-shadow: 1px 1px black
-    margin-top: 5rem
+    margin-top: 160px
     margin-bottom: 3rem
-.subtitle
+
+.section-title
     font-family: $title-font
     font-size: $title-size
+    margin-bottom: 1rem
+    color: $text-color
+    text-shadow: 1px 1px black
+
+.subtitle
+    font-family: $title-font
+    font-size: $subtitle-size
     color: $text-color
     text-shadow: 1px 1px black
     text-align: center
 
 .game
-    height: 1200px
+
+    border: 5px solid $text-color
+    background-color: $secondary-color
+    width: 80%
+    border-radius: 0px 100px 100px 0px
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: center
+
+.characters
+    margin: 1rem    
+    border: 5px solid $text-color
+    background-color: $secondary-color
+    width: 80%
+    border-radius: 0px 100px 100px 0px
     display: flex
     flex-flow: column nowrap
     justify-content: center

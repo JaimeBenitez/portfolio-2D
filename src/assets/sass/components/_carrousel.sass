@@ -2,7 +2,7 @@
 .carrousel
     width: 60%
     max-width: 120em
-    padding: 2em    
+    padding: 1em    
     overflow: hidden
 
 .carrousel .grande
@@ -11,13 +11,45 @@
     flex-flow:  row nowrap
     justify-content: space-between
     align-items: center    
-    padding: 2em
+    padding: 1em
+    transition: all .5s ease
+    transform: translateX(0%)
+.carrousel .grande-historia
+    width: 400%    
+    display: flex
+    flex-flow:  row nowrap
+    justify-content: space-between
+    align-items: center    
+    padding: 1em
     transition: all .5s ease
     transform: translateX(0%)
 .carrousel .video
     width: calc(100% / 2 - 4em)    
     min-height: 10vh
     @include neo (1, 1em, .6em)
+
+.card  
+    @include neo (1, 1em, .6em)
+    background: $primary-color
+    width: calc(100% / 4 - 8em)
+    rotate: 1deg
+    min-height: 20vh    
+    border-radius: 4px    
+    text-align: center
+    padding: 1.5rem
+
+
+.card-title
+    font-family: $title-font
+    color: $text-color
+    text-shadow: 1px 1px black
+    margin-bottom: 1rem
+.card-text
+    font-family: $text-font
+    color: $text-color
+    text-shadow: 0.5px 0.5px black
+    font-weight: bold
+
 
 .carrousel .puntos
     width: 100%   
@@ -34,6 +66,28 @@
     margin: 1em 1em 0
     @include neo (1, 1em, .6em)
     cursor: pointer
+.carrousel .punto-historia
+    width: 4em
+    text-align: center
+    font-weight: bold
+    @include neo (1, 1em, .6em)
+    color: $text-color
+    font-size: $text-size
+    font-family: $text-font
+    height: 2em   
+    margin: 1em 1em 0    
+    cursor: pointer
+    text-shadow: 1px 1px black
+
 
 .carrousel .punto.activo
     background-color: $text-color
+.carrousel .punto-historia.activo
+    background-color: $primary-color    
+
+
+     
+
+
+    
+    
