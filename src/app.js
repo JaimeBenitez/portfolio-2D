@@ -60,7 +60,6 @@ titulo.forEach( ( cadaTitulo, i )=>{
 //Parte lightbox
 
 const enlaces = document.querySelectorAll('.lightbox__ul .lightbox__a')
-console.log(enlaces)
 const lightbox = document.querySelector('.lightbox')
 const lightboxGrande = document.querySelector('.lightbox__grande')
 const cerrar = document.querySelector('.lightbox__cerrar')
@@ -70,7 +69,7 @@ enlaces.forEach( ( cadaEnlace, i )=>{
         e.preventDefault()
         let ruta = cadaEnlace.querySelector('.lightbox__img').src
         let alt = cadaEnlace.querySelector('.lightbox__img').alt
-        console.log(ruta)
+        
         
         lightbox.classList.add('activo')
 
@@ -90,4 +89,34 @@ cerrar.addEventListener('click',()=>{
     lightboxGrande.setAttribute('src', '')
     lightboxGrande.setAttribute('alt', '')
 
+})
+
+//Parte tabs
+
+const li  = document.querySelectorAll('.tab__li')
+const liDos = document.querySelectorAll('.tab__li--dos')
+const tabBloque = document.querySelectorAll('.tab__bloque')
+const tabBloqueDos = document.querySelectorAll('.tab__bloque--dos')
+console.log(liDos)
+
+li.forEach((cadaLi, i) =>{
+    li[i].addEventListener('click', ()=>{
+        li.forEach((cadaLi, i)=>{
+            li[i].classList.remove('activo')
+            tabBloque[i].classList.remove('activo')
+        })
+        li[i].classList.add('activo')
+        tabBloque[i].classList.add('activo')
+    })
+})
+
+liDos.forEach((cadaLi, i) =>{
+    liDos[i].addEventListener('click', ()=>{
+        liDos.forEach((cadaLi, i)=>{
+            liDos[i].classList.remove('activo')
+            tabBloqueDos[i].classList.remove('activo')
+        })
+        liDos[i].classList.add('activo')
+        tabBloqueDos[i].classList.add('activo')
+    })
 })

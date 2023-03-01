@@ -35,13 +35,13 @@
                 <li class="niveles nav-link">niveles
                     <ul class="niveles-desplegable">
                         <li class="sub-link-container"><a href="#verano" class="sub-link">verano</a></li>
-                        <li class="sub-link-container"><a href="#" class="sub-link">otoño</a></li>
-                        <li class="sub-link-container"><a href="#" class="sub-link">invierno</a></li>                        
+                        <li class="sub-link-container"><a href="#otono" class="sub-link">otoño</a></li>
+                        <li class="sub-link-container"><a href="#invierno" class="sub-link">invierno</a></li>                        
                     </ul>
                 </li>
                 <li class="bso nav-link">bso
                     <ul class="bso-desplegable">
-                        <li class="sub-link-container"><a href="#" class="sub-link">temas</a></li>
+                        <li class="sub-link-container"><a href="#temas" class="sub-link">temas</a></li>
                         <li class="sub-link-container"><a href="#" class="sub-link">sonidos</a></li>                                                
                     </ul>
                 </li>   
@@ -52,7 +52,7 @@
     </header>    
     <main class="main">
         <h1 class="title"> GEMEOTRY'S ADVENTURE</h1>
-        <section class="game">
+        <section class="section">
             <h2 class="section-title">EL JUEGO</h2>
             <h3 id="trailers" class="subtitle">TRAILERS</h3>
             <div class="carrousel">
@@ -126,7 +126,7 @@
                 <li class="punto-historia">3</li>
             </ul>
         </section>
-        <section class="characters">
+        <section class="section">
             <h2 class="section-title">PERSONAJES</h2>
             <div class="acordeon">
                 <div class="bloque">
@@ -179,7 +179,7 @@
                 </div>
             </div>
         </section>
-        <section class="levels">
+        <section class="section">
             <h2 class="section-title">NIVELES</h2>
             <h3 class="subtitle" id="verano">VERANO</h3>
             <ul class="lightbox__ul">
@@ -202,7 +202,7 @@
                     </a>
                 </li>
             </ul>             
-            <h3 class="subtitle" id="verano">OTOÑO</h3>
+            <h3 class="subtitle" id="otono">OTOÑO</h3>
             <ul class="lightbox__ul">
                 <li class="lightbox__li">
                     <a href="#" class="lightbox__a" title="otoño bien">
@@ -223,7 +223,7 @@
                     </a>
                 </li>
             </ul> 
-            <h3 class="subtitle" id="verano">INVIERNO</h3>
+            <h3 class="subtitle" id="invierno">INVIERNO</h3>
             <ul class="lightbox__ul">
                 <li class="lightbox__li">
                     <a href="#" class="lightbox__a" title="otoño bien">
@@ -247,6 +247,105 @@
             <div class="lightbox">
                 <button class="lightbox__cerrar">Cerrar</button>
                 <img src='#' alt='' class="lightbox__grande">
+            </div>
+        </section>
+        <section class="section section__bso">
+            <h2 class="section-title">BSO</h2>
+            <h3 class="subtitle" id="temas">TEMAS</h3>
+
+            <div class="tab__contenedor">
+                <ul class="tab__ul">
+                    <li class="tab__li activo">verano</li>
+                    <li class="tab__li">otoño</li>
+                    <li class="tab__li">invierno</li>
+                </ul>
+                <div class="tab__subcontenedor">
+                    <div class="tab__bloque activo">    
+                        <h4 class="tab__text">Sol de verano</h4>                    
+                        <audio controls class="audio" controlsList="nodownload noplaybackrate">                            
+                            <source src="assets/audio/nivel_verano.webm" />
+                            <source src="assets/audio/nivel_verano.mp3" />
+                        </audio>
+                    </div>
+                    <div class="tab__bloque">
+                        <h4 class="tab__text">Tensión</h4>
+                        <audio controls class="audio" controlsList="nodownload noplaybackrate">                            
+                            <source src="assets/audio/tema_otonio.webm" />
+                            <source src="assets/audio/tema_otonio.mp3" />
+                        </audio>
+                    </div>
+                    <div class="tab__bloque">
+                        <h4 class="tab__text">Caminos misteriosos</h4>
+                        <audio controls class="audio" controlsList="nodownload noplaybackrate">                            
+                            <source src="assets/audio/tema_invierno.webm" />
+                            <source src="assets/audio/tema_invierno.mp3" />
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <h3 class="subtitle" id="sonidos">Sonidos</h3>
+
+            <div class="tab__contenedor">
+                <ul class="tab__ul">
+                    <li class="tab__li--dos activo">bloque</li>
+                    <li class="tab__li--dos">game over</li>
+                    <li class="tab__li--dos">item</li>
+                    <li class="tab__li--dos">llamas</li>
+                    <li class="tab__li--dos">portal</li>
+                    <li class="tab__li--dos">victoria</li>
+                    <li class="tab__li--dos">viento</li>
+                </ul>
+                <div class="tab__subcontenedor">
+                    <div class="tab__bloque--dos activo">    
+                        <h4 class="tab__text">Pisapapeles</h4>                    
+                        <audio controls class="audio" controlsList="nodownload noplaybackrate">                            
+                            <source src="assets/audio/bloque.webm" />
+                            <source src="assets/audio/bloque.mp3" />
+                        </audio>
+                    </div>
+                    <div class="tab__bloque--dos ">
+                        <h4 class="tab__text">La caida del héroe</h4>
+                        <audio controls class="audio" controlsList="nodownload noplaybackrate">                            
+                            <source src="assets/audio/game-over.webm" />
+                            <source src="assets/audio/game-over.mp3" />
+                        </audio>
+                    </div>
+                    <div class="tab__bloque--dos">
+                        <h4 class="tab__text">Nueva adquisición</h4>
+                        <audio controls class="audio" controlsList="nodownload noplaybackrate">                            
+                            <source src="assets/audio/item.webm" />
+                            <source src="assets/audio/item.mp3" />
+                        </audio>
+                    </div>
+                    <div class="tab__bloque--dos">
+                        <h4 class="tab__text">A fuego lento</h4>
+                        <audio controls class="audio" controlsList="nodownload noplaybackrate">                            
+                            <source src="assets/audio/llamas.webm" />
+                            <source src="assets/audio/llamas.mp3" />
+                        </audio>
+                    </div>
+                    <div class="tab__bloque--dos">
+                        <h4 class="tab__text">Allá donde la aventura me lleve</h4>
+                        <audio controls class="audio" controlsList="nodownload noplaybackrate">                            
+                            <source src="assets/audio/portal-enter.webm" />
+                            <source src="assets/audio/portal-enter.mp3" />
+                        </audio>
+                    </div>
+                    <div class="tab__bloque--dos">
+                        <h4 class="tab__text">El último triángulo en pie</h4>
+                        <audio controls class="audio" controlsList="nodownload noplaybackrate">                            
+                            <source src="assets/audio/victory.webm" />
+                            <source src="assets/audio/victory.mp3" />
+                        </audio>
+                    </div>
+                    <div class="tab__bloque--dos">
+                        <h4 class="tab__text">Lo que el viento borró</h4>
+                        <audio controls class="audio" controlsList="nodownload noplaybackrate">                            
+                            <source src="assets/audio/viento.webm" />
+                            <source src="assets/audio/viento.mp3" />
+                        </audio>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

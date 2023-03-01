@@ -1,0 +1,152 @@
+.audio
+    @include neo (1, 1em, .3em)
+    background-color: $primary-color
+    
+        
+
+.audio::-webkit-media-controls-panel    
+    background-color: $primary-color
+    
+   
+.audio::-webkit-media-controls-mute-button 
+    background-color: #B1D4E0  
+    border-radius: 50%
+
+.audio::-webkit-media-controls-mute-button:hover
+    @include neo (2, 1em, .3em)
+
+.audio::-webkit-media-controls-play-button 
+    background-color: #B1D4E0  
+    border-radius: 50%
+
+.audio::-webkit-media-controls-play-button:hover 
+    @include neo (2, 1em, .3em)
+
+.audio::-webkit-media-controls-current-time-display, .audio::-webkit-media-controls-time-remaining-display 
+    font-family: $title-font
+    color: $text-color
+    text-shadow: 1px 1px black
+
+.audio::-webkit-media-controls-timeline 
+    background-color: #B1D4E0
+    border-radius: 25px
+    margin-left: 10px
+    margin-right: 10px
+
+.audio::-webkit-media-controls-timeline:hover 
+    @include neo (2, 1em, .3em)
+
+.audio::-webkit-media-controls-volume-slider 
+    background-color: #B1D4E0
+    border-radius: 25px
+    padding-left: 8px
+    padding-right: 8px
+
+.audio::-webkit-media-controls-volume-slider:hover
+    @include neo (2, 1em, .3em)
+
+.tab__contenedor
+    width: 100%
+    max-width: 120em
+    background-color: transparent
+    padding: 1em
+    
+
+.tab__contenedor .tab__ul
+    width: 100%    
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-evenly
+    align-items: center
+    margin-left: 1em
+
+
+.tab__contenedor .tab__li 
+    @include neo (1, 1em, .3em)
+    font-family: $title-font 
+    font-size: $text-size
+    background-color: $primary-color
+    padding: 1em 
+    border-radius: 25px
+    margin: 1em 1em 1em 0       
+    color: $text-color
+    text-shadow: 1px 1px black
+    text-align: center
+    transition: all .5s ease
+
+.tab__contenedor .tab__li--dos
+    @include neo (1, 1em, .3em)
+    font-family: $title-font 
+    font-size: $text-size
+    background-color: $primary-color
+    padding: 1em 
+    border-radius: 25px
+    margin: 1em 1em 1em 0       
+    color: $text-color
+    text-shadow: 1px 1px black
+    text-align: center
+    transition: all .5s ease
+
+.tab__contenedor .tab__li.activo
+    background-color: $text-color
+    color: $effect-color
+
+.tab__contenedor .tab__li:hover
+    @include neo (2, 1em, .3em)
+
+.tab__contenedor .tab__li--dos.activo
+    background-color: $text-color
+    color: $effect-color
+
+.tab__contenedor .tab__li--dos:hover
+    @include neo (2, 1em, .3em)
+
+.tab__text 
+    color: $text-color
+    font-family: $title-font
+    font-size: $text-size
+    text-shadow: 1px 1px black
+    text-align: center
+    margin-bottom: 1em
+
+.tab__contenedor .tab__subcontenedor
+    position: relative
+    min-height: 10vh
+
+.tab__contenedor .tab__bloque
+    padding: 1em
+    margin: 1em
+    position: absolute
+    top: 0
+    left: 35%
+    display: none    
+    transition: all .5s ease
+    @media( max-width: 600px)
+        left: 15%
+        transform: translateX(-10%)
+    @media( max-width:420px)
+        left: 3%
+
+.tab__contenedor .tab__bloque--dos
+    padding: 1em
+    margin: 1em
+    position: absolute
+    top: 0
+    left: 35%
+    display: none        
+    transition: all .5s ease
+    @media( max-width: 600px)
+        left: 15%
+        // transform: translateX(-10%)
+    @media( max-width:420px)
+        left: 3%
+
+.tab__contenedor .tab__bloque.activo
+    display: block
+    
+.tab__contenedor .tab__bloque--dos.activo
+    display: block    
+    
+
+#sonidos
+    margin-top: 3.5em
