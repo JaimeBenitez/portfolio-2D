@@ -29,12 +29,12 @@
             </ul>
              
             <div class="background-logo ">           
-                <img  class="logo" src="assets/IMG/logo.png" alt="logo" />
+                <img  class="logo" src="assets/IMG/logo.png" alt="logo" loading="lazy" />
             </div>
             <ul class="links">                
                 <li class="niveles nav-link">niveles
                     <ul class="niveles-desplegable">
-                        <li class="sub-link-container"><a href="#" class="sub-link">verano</a></li>
+                        <li class="sub-link-container"><a href="#verano" class="sub-link">verano</a></li>
                         <li class="sub-link-container"><a href="#" class="sub-link">otoño</a></li>
                         <li class="sub-link-container"><a href="#" class="sub-link">invierno</a></li>                        
                     </ul>
@@ -137,7 +137,7 @@
                                          assets/IMG/Triangulo-medio.png 480w"                                        
                                  sizes= "(max-width: 680px) 320px,
                                           480px"                                         
-                                 src="assets/IMG/Triangulo-medio.png" alt="Letriang">    
+                                 src="assets/IMG/Triangulo-medio.png" alt="Letriang" loading="lazy">    
                         </div>
                         <div class="contenido__info">
                             <div class="contenido__cumpleanios">
@@ -161,7 +161,7 @@
                                          assets/IMG/goma-medio.png 480w"                                        
                                  sizes= "(max-width: 680px) 320px,
                                           480px"                                         
-                                 src="assets/IMG/Triangulo-medio.png" alt="Berub">    
+                                 src="assets/IMG/Triangulo-medio.png" alt="Berub" loading="lazy">    
                         </div>
                         <div class="contenido__info">
                             <div class="contenido__cumpleanios">
@@ -177,6 +177,76 @@
                         </div>
                     </article>
                 </div>
+            </div>
+        </section>
+        <section class="levels">
+            <h2 class="section-title">NIVELES</h2>
+            <h3 class="subtitle" id="verano">VERANO</h3>
+            <ul class="lightbox__ul">
+                <li class="lightbox__li">
+                    <a href="#" class="lightbox__a" title="verano bien">
+                        <img class="lightbox__img" srcset="assets/IMG/escenarioVeranoMini-pequenio.png 160w,
+                        assets/IMG/escenarioVeranoMini-medio.png 240w"                                        
+                        sizes= "(max-width: 1200px) 160px,
+                        240px"                                         
+                        src="assets/IMG/escenarioVerano.png" alt="escenario verano normal" >
+                    </a>
+                </li>
+                <li class="lightbox__li">
+                    <a href="#" class="lightbox__a" title="verano mal">
+                        <img class="lightbox__img" srcset="assets/IMG/escenarioVeranoConMascaraMini-pequenio.png 160w,
+                        assets/IMG/escenarioVeranoConMascaraMini-medio.png 240w"                                        
+                        sizes= "(max-width: 1200px) 160px,
+                        240px"                                         
+                        src="assets/IMG/escenarioVeranoConMascara.png" alt="escenario verano corrupto" >
+                    </a>
+                </li>
+            </ul>             
+            <h3 class="subtitle" id="verano">OTOÑO</h3>
+            <ul class="lightbox__ul">
+                <li class="lightbox__li">
+                    <a href="#" class="lightbox__a" title="otoño bien">
+                        <img class="lightbox__img" srcset="assets/IMG/EscenarioOtonoMini-pequenio.png 160w,
+                        assets/IMG/EscenarioOtonoMini-mediano.png 240w"                                        
+                        sizes= "(max-width: 1200px) 160px,
+                        240px"                                         
+                        src="assets/IMG/EscenarioOtono.png" alt="escenario otoño normal" >
+                    </a>
+                </li>
+                <li class="lightbox__li">
+                    <a href="#" class="lightbox__a" title="otoño mal">
+                        <img class="lightbox__img" srcset="assets/IMG/EscenarioOtonoManchasMini-pequenio.png 160w,
+                        assets/IMG/EscenarioOtonoManchasMini-mediano.png 240w"                                        
+                        sizes= "(max-width: 1200px) 160px,
+                        240px"                                         
+                        src="assets/IMG/EscenarioOtonoManchas.png" alt="escenario otoño corrupto" >
+                    </a>
+                </li>
+            </ul> 
+            <h3 class="subtitle" id="verano">INVIERNO</h3>
+            <ul class="lightbox__ul">
+                <li class="lightbox__li">
+                    <a href="#" class="lightbox__a" title="otoño bien">
+                        <img class="lightbox__img" srcset="assets/IMG/EscenarioInviernoMini-pequenio.png 160w,
+                        assets/IMG/EscenarioInviernoMini-medio.png 240w"                                        
+                        sizes= "(max-width: 1200px) 160px,
+                        240px"                                         
+                        src="assets/IMG/EscenarioInvierno.png" alt="escenario invierno normal" >
+                    </a>
+                </li>
+                <li class="lightbox__li">
+                    <a href="#" class="lightbox__a" title="otoño mal">
+                        <img class="lightbox__img" srcset="assets/IMG/EscenarioInviernoManchasMini-pequenio.png 160w,
+                        assets/IMG/EscenarioInviernoManchasMini-mediano.png 240w"                                        
+                        sizes= "(max-width: 1200px) 160px,
+                        240px"                                         
+                        src="assets/IMG/EscenarioInviernoManchas.png" alt="escenario invierno corrupto" >
+                    </a>
+                </li>
+            </ul>
+            <div class="lightbox">
+                <button class="lightbox__cerrar">Cerrar</button>
+                <img src='#' alt='' class="lightbox__grande">
             </div>
         </section>
     </main>

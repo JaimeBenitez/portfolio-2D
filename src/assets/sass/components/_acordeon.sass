@@ -10,7 +10,7 @@
     margin: 0 0 1em
 
 .acordeon .acordeon-title
-    @include neo (1, 1em, .7em)
+    @include neo (1, 1em, .3em)
     margin: 0 0 1em
     padding: 1em
     background-color: $primary-color
@@ -19,6 +19,9 @@
     text-align: center
     color: $text-color
     text-shadow: 1px 1px black
+    cursor: pointer
+.acordeon .acordeon-title:hover
+    @include neo (2, 1em, .3em)
 
 .acordeon .contenido
     padding: 1em
@@ -29,7 +32,7 @@
     display: flex
     align-items: center
     max-width: 90rem
-    @include neo (1, 1em, .7em)
+    @include neo (1, 1em, .3em)
     background-color: $primary-color
     
     

@@ -14,6 +14,7 @@
     padding: 1em
     transition: all .5s ease
     transform: translateX(0%)
+    
 .carrousel .grande-historia
     width: 400%    
     display: flex
@@ -25,11 +26,14 @@
     transform: translateX(0%)
 .carrousel .video
     width: calc(100% / 2 - 4em)    
-    min-height: 10vh
-    @include neo (1, 1em, .6em)
-
+    min-height: 10vh  
+    @media ( max-width: 550px)
+        height: 15em
+        width: calc(100% / 2 - 2em)  
+    @include neo (1, 1em, .3em)
+    
 .card  
-    @include neo (1, 1em, .6em)
+    @include neo (1, 1em, .3em)
     background: $primary-color
     width: calc(100% / 4 - 8em)
     rotate: 1deg
@@ -37,6 +41,9 @@
     border-radius: 4px    
     text-align: center
     padding: 1.5rem
+    @media ( max-width: 550px)
+        width: calc(100% / 4 - 6em)
+        rotate: 0deg
 
 
 .card-title
@@ -44,12 +51,14 @@
     color: $text-color
     text-shadow: 1px 1px black
     margin-bottom: 1rem
+    
+
 .card-text
     font-family: $text-font
     color: $text-color
     text-shadow: 0.5px 0.5px black
     font-weight: bold
-
+    
 
 .carrousel .puntos
     width: 100%   
@@ -64,14 +73,16 @@
     width: 2em
     height: 2em   
     margin: 1em 1em 0
-    @include neo (1, 1em, .6em)
-    cursor: pointer
+    cursor: pointer   
+    @include neo (1, 1em, .3em)
+    
+    
 .carrousel .punto-historia
     width: 4em
     // min-width: 15%
     text-align: center
     font-weight: bold
-    @include neo (1, 1em, .6em)
+    @include neo (1, 1em, .3em)
     color: $text-color
     font-size: $text-size
     font-family: $text-font
@@ -79,11 +90,15 @@
     margin: 1em 1em 0    
     cursor: pointer
     text-shadow: 1px 1px black
+    @media ( max-width: 550px)
+        margin: 0.5em .5em 0
 
 
 .carrousel .punto.activo
+    
     background-color: $text-color
 .carrousel .punto-historia.activo
+    
     background-color: $primary-color    
 
 

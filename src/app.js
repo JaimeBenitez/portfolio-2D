@@ -56,3 +56,38 @@ titulo.forEach( ( cadaTitulo, i )=>{
     bloque[i].classList.add('activo')
     })
 })
+
+//Parte lightbox
+
+const enlaces = document.querySelectorAll('.lightbox__ul .lightbox__a')
+console.log(enlaces)
+const lightbox = document.querySelector('.lightbox')
+const lightboxGrande = document.querySelector('.lightbox__grande')
+const cerrar = document.querySelector('.lightbox__cerrar')
+
+enlaces.forEach( ( cadaEnlace, i )=>{
+    enlaces[i].addEventListener( 'click', ( e )=>{
+        e.preventDefault()
+        let ruta = cadaEnlace.querySelector('.lightbox__img').src
+        let alt = cadaEnlace.querySelector('.lightbox__img').alt
+        console.log(ruta)
+        
+        lightbox.classList.add('activo')
+
+        
+        
+        lightboxGrande.setAttribute('src', ruta)
+        lightboxGrande.setAttribute('alt', alt)
+        
+        
+        
+    })
+})
+
+cerrar.addEventListener('click',()=>{
+    lightbox.classList.remove('activo')
+   
+    lightboxGrande.setAttribute('src', '')
+    lightboxGrande.setAttribute('alt', '')
+
+})
