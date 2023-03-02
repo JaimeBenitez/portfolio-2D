@@ -1,8 +1,6 @@
 .audio
-    @include neo (1, 1em, .3em)
-    background-color: $primary-color
-    
-        
+    @include neo (1, 1em, .1em)
+    background-color: $primary-color        
 
 .audio::-webkit-media-controls-panel    
     background-color: $primary-color
@@ -62,7 +60,7 @@
 
 
 .tab__contenedor .tab__li 
-    @include neo (1, 1em, .3em)
+    @include neo (1, 1em, .1em)
     font-family: $title-font 
     font-size: $text-size
     background-color: $primary-color
@@ -75,7 +73,7 @@
     transition: all .5s ease
 
 .tab__contenedor .tab__li--dos
-    @include neo (1, 1em, .3em)
+    @include neo (1, 1em, .1em)
     font-family: $title-font 
     font-size: $text-size
     background-color: $primary-color
@@ -122,10 +120,11 @@
     display: none    
     transition: all .5s ease
     @media( max-width: 600px)
-        left: 15%
-        transform: translateX(-10%)
+        left: 15%        
     @media( max-width:420px)
         left: 3%
+
+    
 
 .tab__contenedor .tab__bloque--dos
     padding: 1em
@@ -136,8 +135,7 @@
     display: none        
     transition: all .5s ease
     @media( max-width: 600px)
-        left: 15%
-        // transform: translateX(-10%)
+        left: 15%        
     @media( max-width:420px)
         left: 3%
 

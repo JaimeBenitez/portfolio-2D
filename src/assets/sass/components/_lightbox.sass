@@ -4,7 +4,7 @@
     margin-bottom: 2em    
     display: flex
     justify-content: space-between    
-    @include neo (1, 1em, .3em)
+    @include neo (1, 1em, .1em)
     background-color: $primary-color
     @media ( max-width: 840px)
         flex-direction: column
@@ -13,7 +13,7 @@
         
 .lightbox__ul .lightbox__li    
     overflow: hidden
-    @include neo (1, 1em, .3em)
+    border-radius: 1em
     margin: 1em
 
     
@@ -52,7 +52,7 @@
     height: 3em
     font-family: $title-font
     font-size: $text-size
-    @include neo (1, 1em, .3em)
+    @include neo (1, 1em, .1em)
     color: $text-color
     text-shadow: 1px 1px black
     background-color: $primary-color
@@ -64,7 +64,7 @@
 .lightbox .lightbox__grande
     width: 80%
     height: 80vh
-    @include neo (1, 1em, .3em)
+    @include neo (1, 1em, .1em)
     background-color: $primary-color
     @media (max-width: 1200px)
         width: 600px

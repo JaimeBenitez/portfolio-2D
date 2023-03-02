@@ -70,7 +70,6 @@ const li = document.querySelectorAll(".tab__li");
 const liDos = document.querySelectorAll(".tab__li--dos");
 const tabBloque = document.querySelectorAll(".tab__bloque");
 const tabBloqueDos = document.querySelectorAll(".tab__bloque--dos");
-console.log(liDos);
 li.forEach((cadaLi, i)=>{
     li[i].addEventListener("click", ()=>{
         li.forEach((cadaLi, i)=>{
@@ -90,6 +89,19 @@ liDos.forEach((cadaLi, i)=>{
         liDos[i].classList.add("activo");
         tabBloqueDos[i].classList.add("activo");
     });
+});
+//Modificar logo
+window.addEventListener("scroll", function() {
+    var logoContenedor = document.querySelector(".background-logo");
+    var logo = document.querySelector(".logo");
+    console.log(window.scrollY);
+    if (window.scrollY > 100) {
+        logo.classList.add("scrolled");
+        logoContenedor.classList.add("scrolled");
+    } else {
+        logo.classList.remove("scrolled");
+        logoContenedor.classList.remove("scrolled");
+    }
 });
 
 //# sourceMappingURL=index.816e7b21.js.map

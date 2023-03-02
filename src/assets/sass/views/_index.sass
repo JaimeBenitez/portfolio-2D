@@ -143,19 +143,33 @@ main
     border-bottom: 5px  solid $text-color
     border-right: 5px  solid $text-color
     border-left: 5px  solid $text-color
+    transition: all .5 ease
     @media(max-width: 1050px)
         min-height: 80px
     @media(max-width: 600px)
         display: none
 
+.background-logo.scrolled 
+    background-color: $secondary-color
+    min-height: 160px
+    border-bottom: 5px  solid $text-color
+    border-right: 5px  solid $text-color
+    border-left: 5px  solid $text-color
+    min-height: 80px
+    transition: all .5 ease
 
 .logo   
     height: 154px
     width: 384px
+    transition: all .5 ease
     @media(max-width: 1050px)
         height: 77px
         width: 192px
 
+.logo.scrolled 
+    height: 77px
+    width: 192px
+    transition: all .5 ease
 
 .main
     display: flex
@@ -202,6 +216,10 @@ main
     flex-flow: column nowrap
     justify-content: center
     align-items: center
+    @media(max-width: 850px)
+        border: 0
+        background-color: $primary-color
+        width: 100%
 
 .section__bso
     padding-bottom: 5rem

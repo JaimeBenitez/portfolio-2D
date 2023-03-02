@@ -4,6 +4,8 @@
     max-width: 120em
     padding: 1em    
     overflow: hidden
+    @media(max-width: 850px)
+        width: 90%
 
 .carrousel .grande
     width: 200%    
@@ -30,10 +32,10 @@
     @media ( max-width: 550px)
         height: 15em
         width: calc(100% / 2 - 2em)  
-    @include neo (1, 1em, .3em)
+    @include neo (1, 1em, .1em)
     
 .card  
-    @include neo (1, 1em, .3em)
+    @include neo (1, 1em, .1em)
     background: $primary-color
     width: calc(100% / 4 - 8em)
     rotate: 1deg
@@ -41,7 +43,9 @@
     border-radius: 4px    
     text-align: center
     padding: 1.5rem
-    @media ( max-width: 550px)
+    @media ( max-width: 850px)
+        background-color: $secondary-color
+    @media ( max-width: 550px)        
         width: calc(100% / 4 - 6em)
         rotate: 0deg
 
@@ -74,7 +78,7 @@
     height: 2em   
     margin: 1em 1em 0
     cursor: pointer   
-    @include neo (1, 1em, .3em)
+    @include neo (1, 1em, .1em)
     
     
 .carrousel .punto-historia
@@ -82,7 +86,7 @@
     // min-width: 15%
     text-align: center
     font-weight: bold
-    @include neo (1, 1em, .3em)
+    @include neo (1, 1em, .1em)
     color: $text-color
     font-size: $text-size
     font-family: $text-font
